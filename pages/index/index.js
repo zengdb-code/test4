@@ -13,9 +13,6 @@ Page({
     duration: 1000,
     swiperH:"",
     nowIdx:0,
-
-
-    
   },
   //事件处理函数
   bindViewTap: function() {
