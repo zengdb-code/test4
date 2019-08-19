@@ -12,5 +12,5 @@
 .top{
   height:35px;
   line-height:30px;
-  border-color:#c4c4c4;   
+  border-color:#c4c4c4;  
 }
