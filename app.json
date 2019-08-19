@@ -1,8 +1,7 @@
 {
-  "pages": [    
+  "pages": [
     "pages/homepage/homepage",
     "pages/index/index",
-    
     "pages/share/share",
     "pages/paymentsuc/paymentsuc",
     "pages/Shareearn/Shareearn",
@@ -11,7 +10,6 @@
     "pages/myorder/myorder",
     "pages/pay/pay",
     "pages/logs/logs"
-
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -19,5 +17,6 @@
     "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "black"
   },
-  "debug": false
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
 }
