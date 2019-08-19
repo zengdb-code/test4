@@ -1,0 +1,49 @@
+page{
+  background:#eee;
+}
+.pic{
+  border:1px solid white;
+  border-radius:10px;
+  height:160px;
+  width:90%;
+  margin:16px 5% 0 5%;
+  overflow:hidden;
+}
+.pic1{
+  /* border:1px solid red; */
+  /* height:200px; */
+  width:100%;
+  margin:10px 0;
+}
+.pic2{
+  /* border:0px solid red; */
+  height:200px;
+  width:100%;
+  /* margin-top:2px; */
+   margin-top:8px;
+}
+.pic3{
+  /* border:1px solid red; */
+  height:200px;
+  width:100%;
+ 
+}
+.scroll-view_H{
+  width: 100%;
+  white-space: nowrap;
+}
+.scroll-view-item_H{
+  width: 600px;
+  height: 150px;
+  display: inline-block;
+}
+.le-img{
+  width:100%;
+  display: block;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+  border-radius:10px;
+}
+.le-img.le-active{
+  transform:scale(1);
+}

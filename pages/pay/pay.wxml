@@ -1,0 +1,10 @@
+<button
+  type="primary"
+  size="{{primarySize}}"
+  loading="{{loading}}"
+  plain="{{plain}}"
+  disabled="{{disabled}}"
+  bindtap="onPayment"
+>
+ 支付
+</button>

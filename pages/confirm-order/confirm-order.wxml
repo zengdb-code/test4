@@ -1,0 +1,68 @@
+<view class="order">
+     <view style="margin:15px 0 5px 25px;">订单号：{{orderInfo.Data.OrderId}}</view>
+     <view style="margin:0 0 10px 25px;">订单时间：{{orderInfo.Data.CreatedTime}}</view>
+</view>
+
+ <view class="goods">
+
+ <view class="goods-content">
+  <image class="pic" src="{{orderInfo.Data.ImgUrl}}"> </image>
+
+  <view class="goods-contenr-right">
+    <view class="goods-txt" style="font-family:PingFang-SC;font-size:14px;color:#2c2c2c;float:left;">{{orderInfo.Data.ProductName}}</view>
+    <view style="font-family:San-Francisco-Display-Bold;padding-top:25px;font-size:18px;color:#6200ff;">￥{{orderInfo.Data.Price/unit}}</view>
+    </view>
+
+  </view>
+
+ </view>
+
+<view style="margin:0 5% 0 5%;">
+ <view class="account">
+ <view class="font1" style="float:left;line-height:44px;">购买数量</view>
+ <view  class="goods-amount">*{{orderInfo.Data.Num}}</view>
+</view>
+
+<view class="message">
+
+  <view class="font1">收件信息</view>
+  <view class="font2" style="margin-top:16px;">{{orderInfo.Data.AddresseeInfo.RealName}}</view>
+  <view class="font2" style="margin-top:12px;">{{orderInfo.Data.AddresseeInfo.Phone}}</view>
+  <view class="font1" style="margin-top:12px;">{{orderInfo.Data.AddresseeInfo.Address}}</view>
+
+</view>
+
+<view class="total">
+
+<view class="line" style="margin-top:16px;">
+<view class="font1" style="float:left"> 商品总额</view>
+<view class="font2"style="float:right">￥{{totalAmount}}</view>
+</view>
+
+<view class="line" style="margin-top:8px;">
+<view class="font1" style="float:left">邮费</view>
+<view class="font2"style="float:right">￥0.00</view>
+</view>
+
+</view>
+
+<view class="total1">
+
+<view class="line" style="margin-top:16px;">
+<view class="font1" style="float:left">共计</view>
+<view class="font2"style="float:right">￥{{totalAmount}}</view>
+</view>
+
+<view class="line" style="margin-top:8px;">
+<view class="font1" style="float:left">实付</view>
+<view class="font2"style="float:right;color:#6200ff">￥{{actualAmount}}</view>
+</view>
+
+</view>
+
+<button class="btn" bindtap="onPay">去支付</button>
+
+
+
+
+</view>

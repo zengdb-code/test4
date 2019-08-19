@@ -1,0 +1,10 @@
+<view class="authorize-warning" hidden="{{!isShowAhturoizeWarning}}">
+    <view class="box">
+       <!-- <view class="title">警告</view> 
+       <view class="content">拒绝授权后，将无法通知您。。。。。点击“取消”拒绝提醒，点击“确定”再次尝试授权？</view> -->
+      <view class="footer"> 
+       <!-- <button bindtap="cancelAuthroize">取消</button> -->
+        <button open-type="getUserInfo" bindgetuserinfo="getAuthorize">获取用户昵称</button>
+      </view>
+    </view>
+</view>  

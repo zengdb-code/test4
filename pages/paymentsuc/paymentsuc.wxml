@@ -1,0 +1,26 @@
+<!--pages/paymentsuc/paymentsuc.wxml-->
+<!-- 指向微信公众平台首页的web-view -->
+
+<view style="height:100%;width:100%;">
+  <view class="tray">
+    <view>
+      <text class="paytitile">{{title}}</text><image src="../imgs/pay.png" mdoe="aspectFit"></image>
+    </view>
+      <view  class="paymoney">
+      ￥{{amount}}
+      </view>
+    <view class="serialnumber">
+    订单号码：
+<text>{{orderNo}}</text>
+    </view>
+    <view style="padding-top:16rpx;padding-bottom:128rpx;"  class="serialnumber">
+    支付时间：
+    <text>{{date}}</text>
+    </view>
+    <button bindtap='setPlain'  class="accomplish">完成</button>
+    <view wx:if="{{isJump}}">
+    <web-view src="{{viewUrl}}"></web-view>
+    </view>  
+  </view>
+</view>
+

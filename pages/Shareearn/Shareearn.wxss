@@ -1,0 +1,54 @@
+/* pages/Shareearn/Shareearn.wxss */
+page{
+  background:#eee;
+  height:100%;
+  width:100%;
+  padding-bottom:66rpx;
+
+}
+.tray{
+    background:white;
+  border-radius:25rpx;
+  margin-left:24rpx;
+  margin-right:24rpx;
+  margin-top:20rpx;
+  padding:48rpx 30rpx;
+}
+.gradualchange{
+  background: linear-gradient(to right,#8235fd,#3721ea);
+}
+.floatnon::after{
+  content:"";
+  display: block;
+  clear:both;
+}
+.shareslogan{
+  padding-left:24rpx;padding-right:48rpx;padding-top:20rpx;
+}
+.gradientfont{
+  float:left;font-family:PingFangSC;font-size:32rpx;-webkit-background-clip: text;color: transparent;
+}
+.gradientbutton{
+  float:right;height:60rpx;width:240rpx;border-radius:0 60rpx 60rpx 60rpx;color:white;font-size:28rpx;line-height:60rpx;font-family:PingFangSC;margin-top:0.6rem
+}
+.headportrait{
+  float:left;width:120rpx;height:120rpx;border-radius:120rpx;overflow:hidden;vertical-align:middle
+}
+.lead{
+  float:left;font-family:PingFangSC;font-size:32rpx;color:#2c2c2c;margin-top:12rpx;margin-left:36rpx;
+}
+.slogan{
+  font-size:24rpx;font-family:PingFangSC-Light;color:#6c6c6c;margin-top:16rpx;
+}
+.displaypicture{
+  width:600rpx;height:480rpx;
+}
+.bottomcode{
+  display:flex; justify-content:center;align-items:center;margin-top:32rpx;
+}
+.discern{
+  font-family:PingFangSC;font-size:28rpx;color:#6200ff;margin-left:48rpx;text-align:left;
+}
+.savealbum{
+  width:480rpx;height:88rpx;margin-top:48rpx;font-family:PingFangSC;font-size:32rpx;border-radius:88rpx 88rpx;background:#6200FF;color:white;line-height:88rpx
+}

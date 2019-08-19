@@ -1,0 +1,33 @@
+/* pages/paymentsuc/paymentsuc.wxss */
+
+page{
+  background:#eee;
+  height:100%;
+  width:100%;
+}
+.tray{
+  background:white;
+  height:80%;
+  border-radius:25rpx;
+  width:85%;
+  margin:0 auto;
+  margin-top:20rpx;
+  padding:96rpx 30rpx 0;
+}
+.paytitile{
+  font-family:PingFang-SC-Bold;font-size:56rpx;color:#2c2c2c;vertical-align: middle;margin-right:32rpx
+}
+image{
+  vertical-align: middle;
+  width:80rpx;
+  height:80rpx;
+}
+.paymoney{
+  margin-top:72rpx;margin-bottom:48rpx;font-family:San-Francisco-Display-Bold;font-size:72rpx;
+}
+.serialnumber{
+  font-family:PingFang-SC-Thin;font-size:30rpx;color:#4a4a4a;
+}
+.accomplish{
+  background:#6200FF;color:white;
+}

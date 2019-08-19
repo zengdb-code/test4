@@ -1,0 +1,47 @@
+<view class="nav">
+  <!-- 返回键和我的订单 -->
+  <view class="top">
+    <image style="width:10px;height:20px;margin-top:5px;float:left" src="../imgs/back.png"></image>
+    <view class="back">我的订单</view>
+  </view>
+ <!-- 下拉选项栏和订单条数栏 -->
+  <view class="sel">
+    <view style="float:left;font-family:PingFangSC;font-size:18px;color:#2c2c2c;">共{{orderNum}}条订单记录</view>
+<view style="float:right;font-size:14px;">待付款（下拉选项栏）</view>
+  </view>
+  <!-- 订单提交状况部分 -->
+  <view class="mid" wx:for="{{orderList.Data}}" wx:for-index="idx" wx:for-item="order">
+      <view class="goods">
+        <view class="order">
+          <view style="margin-top:16px;float：left;">
+              <view class="font1" style="float:left;width:70%;">订单号：{{order.OrderId}}</view>
+              <view class="font1" style="float:right;width:30%;">状态:{{order.StatusName}}</view>
+          </view>
+          <view  class="font1">订单时间：{{order.CreatedTime}}</view>
+        </view>
+<!-- 一个商品订单行 -->
+      <view class="order-produce">
+          <view >
+            <image style="width:96px;height:96px;float:left;" src="../imgs/nav-1.png"></image>
+          </view>
+          <view class="message-produce">
+            <view class="goods-name" >{{order.ProductName}}</view>
+            <view style="margin-top:8px;">
+              <view class="goods-price">￥{{order.Price/unit}}</view>
+              <view class="goods-amount">*{{order.Num}}</view>
+            </view>
+          </view>   
+      </view>
+<!-- 商品合计栏   -->
+      <view class="sum">
+        共 1 件, 合计:￥{{order.TotalAmount/unit}} (含邮费￥0.00元）
+      </view>
+     <view >
+       <button class="btn">查看物流</button>
+     </view>
+    </view>
+  </view>
+</view>
+
+
+

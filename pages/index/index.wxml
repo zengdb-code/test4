@@ -1,0 +1,42 @@
+
+<view class="section section_gap" >
+  <!-- <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+    <view class="scroll-view-item_H" wx:for="{{bannerList.data.Data}}" wx:for-index="idx" wx:for-item="banner" >
+      <view bindtap='onBannerTap' data-bannerid="{{banner.Id}}">
+        <image  style="width:100%;height:160px;"src="{{banner.ImgUrl}}"></image>   autoplayDisableOnInteraction="false"
+      </view>
+    </view> 
+  </scroll-view> -->
+  <swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+  bindchange="intervalChange" 
+  previous-margin="48"
+  next-margin="48"
+  circular="true"
+  style="padding:24px 0;height:{{swiperH}};background:#eee;"
+>
+  <block wx:for="{{bannerList}}" wx:for-index="idx" wx:for-item="banner" >
+    <swiper-item >
+      <view bindtap='onBannerTap' data-link="{{banner.Link}}" data-bannerid="{{banner.Id}}">
+       <image src="{{banner.ImgUrl}}"  style="width:100%;" class="le-img {{nowIdx==idx?'le-active':''}}" bindload='getHeight' mode="widthFix"/>
+     </view>
+    </swiper-item>
+  </block>
+</swiper>
+   <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+</view> 
+  <view class="pic1" wx:for="{{productList.data.Data}}" wx:for-index="idx" wx:for-item="product" > 
+      <view bindtap='onProductTap' data-productid="{{product.Id}}">
+        <image style="width:100%;"  src="{{product.CoverImgUrl}}"  mode="widthFix"></image>
+      </view>
+     <!-- <button bindgetuserinfo='getUserInfo' open-type='getUserInfo'></button> -->
+  </view>
+
+   <!-- <view class="pic2">
+    <image style="width:100%;height:200px;" src='../imgs/index-2.png'></image>
+  </view>  -->
+  
+

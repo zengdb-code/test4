@@ -1,0 +1,29 @@
+<!--pages/Shareearn/Shareearn.wxml-->
+<view class="floatnon shareslogan">
+  <text class="gradualchange gradientfont">
+<text>分享是一种美德,</text>\n<text style="margin-left:2rem;">他受益，你获利</text>
+  </text>
+  <button class="gradualchange gradientbutton">返利 ￥200.00</button>
+</view>
+<view class="tray">
+  <view class="floatnon" style="margin-bottom:48rpx;">
+    <view class="headportrait">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view  class="lead">
+      <open-data type="userNickName"></open-data>
+      <view  class="slogan">购入了这个好东西并分享给你，也许你会喜欢</view>
+    </view>
+  </view>
+  <view style="text-align:center;">
+    <image src="../imgs/2x.png" mode="widthFix" class="displaypicture"></image>
+  </view>
+  <view class="bottomcode">
+    <image src='../imgs/1-1.png' mode="widthFix" style="width:160rpx;height:160rpx;"></image>
+    <view class="discern">
+      <view style="margin-bottom:16rpx;">长按识别小程序</view>
+      <view>返利享不停</view>
+    </view>
+  </view>
+</view>
+<button  class="savealbum">保存到相册 </button>

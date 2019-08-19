@@ -1,0 +1,10 @@
+<view style="text-align:center;padding-bottom:64rpx;"> 
+  <image src="../imgs/homelogo.png" style="width:25%;" mode="widthFix"></image>
+</view>
+<view style="text-align:center;padding-bottom:128rpx;">
+  <image src="../imgs/homefont.png" mode="widthFix" style="width:70%;"></image>
+</view>
+<view style="text-align:center;">
+  <image src="../imgs/homeillustration.png" mode="widthFix" style="width:35%;"></image>
+</view>
+<button style="background:#E60044;width:80%;margin:0 auto;color:white;margin-top:64rpx;" open-type="getUserInfo" bindgetuserinfo="getUserInfo">进入</button>

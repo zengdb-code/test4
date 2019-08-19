@@ -1,0 +1,130 @@
+/* pages/yongjin/yongjin.wxss */
+page{
+  background-color:#f0f0f0;
+}
+
+.top-size{
+  border:0px solid red;
+  height:65px;
+  margin-top:40px;
+}
+.font{
+      background: linear-gradient(to right,#8235fd,#3721ea);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-family:PingFangSC;
+      font-size:16px;
+}
+.top-size-left{
+ border:0px solid red;
+ width:160px;
+ float:left;
+}
+.top-size-right{
+ border:0px solid red;
+ width:120px;
+ /* height:30px; */
+ float:right;
+ margin-top:18px;
+ border-radius:14px;
+  background: linear-gradient(to right,#8235fd,#3721ea);
+  /* -webkit-background-clip: text;
+  background-color: transparent; */
+  color:#ffffff;
+  margin-right:24px;
+  text-align:center;
+  line-height:30px;
+  /* padding-top:1%;  */
+  /* padding-bottom:3px;  */
+}
+.middle{
+  border:0px solid red;
+  background-color:#ffffff;
+  height:440px;
+  border-radius:10px;
+  margin:0 3%;
+}
+.mid{
+ border:1px solid #ffffff;
+ height:100%;
+ margin:0 4%;
+}
+.user{
+  /* position:relative; */
+  border:1px solid #ffffff;
+  margin-top:24px;
+  height:54px;
+  position:relative;
+}
+.user-pic{
+  border:0px solid red;
+  float:left;
+  width:48px;
+  height:48px;
+
+}
+.user-name{
+  /* text-align:center; */
+  float:left;
+  border:0px solid green;
+  margin-left:18px;
+  /* height:140px; */
+  width:73%;
+  /* padding-top:3px; */
+  /* padding-bottom:3px; */
+}
+.zll{
+padding-top:6px;
+font-family:PingFangSC;
+font-size:14px;
+color:#2c2c2c;
+}
+.like{
+  padding-top:4px;
+  font-family:PingFangSC-Light;
+  font-size:10px;
+  color:#6c6c6c;
+  /* margin-top:4px; */
+}
+.font-1{
+  font-family:PingFangSC;
+  font-size:14px;
+  color:#6200ff;
+}
+.down{
+  margin-top:16px;
+  border:0px solid black;
+  margin-left:13%;
+  margin-right:13%;
+  height:60px;
+}
+.down-left{
+  float:left;
+  border:1px solid red;
+  width:60px;
+  height:60px;
+}
+.down-right{
+  float:left;
+  border:0px solid red;
+  margin-bottom:24px;
+  width:100px;
+  height:50px;
+  margin-left:20px;
+  margin-top:5px;
+}
+.btn1{
+  width:240px;
+  height:44px;
+  font-size:16px;
+  font-family:PingFangSC;
+  background-color:#6200ff;
+  color:#ffffff;
+  border-radius:25px;
+  margin:0 auto;
+  margin-top:24px;
+  vertical-align:middle;
+}
+.btn::after{
+   border:0;
+}

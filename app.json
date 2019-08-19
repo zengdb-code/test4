@@ -1,0 +1,23 @@
+{
+  "pages": [    
+    "pages/homepage/homepage",
+    "pages/index/index",
+    
+    "pages/share/share",
+    "pages/paymentsuc/paymentsuc",
+    "pages/Shareearn/Shareearn",
+    "pages/confirm-order/confirm-order",
+    "pages/goods-detail/goods-detail",
+    "pages/myorder/myorder",
+    "pages/pay/pay",
+    "pages/logs/logs"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+  "debug": false
+}
